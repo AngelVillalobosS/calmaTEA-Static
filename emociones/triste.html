@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../images/assets/calmatea_logo.png"
+      type="image/x-icon"
+    />
+    <title>Pagina de inicio</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400&family=Lato:wght@300&display=swap"
+    />
+    <link rel="stylesheet" href="../css/components/navbar.css" />
+    <link rel="stylesheet" href="../css/components/footer.css" />
+    <link rel="stylesheet" href="../css/emociones.css" />
+    <!-- Llamado de los archivos Js -->
+    <script src="../js/navbar.js"></script>
+    <script src="../js/emociones.js"></script>
+  </head>
+  <body>
+    <!-- Comienzo del Header -->
+    <header>
+      <nav class="navbar-custom">
+        <div style="display: flex; align-items: center; gap: 10px">
+          <img
+            src="../images/assets/calmatea_logo.png"
+            width="150"
+            height="150"
+            alt="Logo"
+          />
+          <div style="display: flex; flex-direction: column">
+            <span
+              ><a href="../homepage.html" class="sendhome">CalmaTea</a></span
+            >
+            <span>"Equilibra tus emociones, encuentra tu calma"</span>
+          </div>
+        </div>
+
+        <div class="menu-container">
+          <button class="menu-button">&#9776;</button>
+          <div class="menu-dropdown">
+            <ul>
+              <li><a href="../homepage.html">Inicio</a></li>
+              <li><a href="../calmaestres.html">Calma tu estrés</a></li>
+              <li>
+                <a href="../registroEmocion.html">Registra una emoción</a>
+              </li>
+              <li><a href="../ejercicios.html">Ejercicios</a></li>
+              <li><a href="../diario.html">Diario</a></li>
+              <li><a href="../calendario.html">Calendario emocional</a></li>
+              <li><a href="../login.html">Cerrar sesión</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Comienzo del Main -->
+    <main>
+      <div class="container-custom">
+        <div class="content-box">
+          <div class="back-btn-container">
+            <a href="../registroEmocion.html" class="back-button">
+              <img
+                src="../images/assets/flecha.png"
+                alt="Regresar"
+                class="back-arrow"
+              />
+            </a>
+          </div>
+
+          <div class="text-with-image-left">
+            <img
+              src="../images/assets/niña-triste.png"
+              alt="Niña triste"
+              width="250"
+            />
+            <h2>
+              Siento que estés triste. A veces, las emociones pueden ser
+              intensas, pero con el tiempo cambian. No estás solo, estoy aquí
+              para ti.
+            </h2>
+          </div>
+
+          <h3>Puedes realizar lo siguiente:</h3>
+
+          <div class="exercise-list">
+            <p>
+              1. Haz una pausa y respira profundamente<br />Cierra los ojos y
+              respira lentamente. Deja que el aire te calme poco a poco.
+            </p>
+            <div class="text-with-image">
+              <img src="../images/assets/respirar.png" alt="Respirar" />
+            </div>
+
+            <p>
+              2. Haz algo que te consuele<br />Envuélvete en una manta, mira una
+              película que te haga sentir mejor o pasa tiempo con una mascota.
+            </p>
+            <div class="text-with-image">
+              <img src="../images/assets/consuelo.png" alt="Consuelo" />
+            </div>
+
+            <p>
+              3. Dale un poco de movimiento a tu cuerpo<br />Camina un poco al
+              aire libre o haz algunos estiramientos. A veces el movimiento
+              ayuda a despejar la mente.
+            </p>
+            <div class="text-with-image">
+              <img src="../images/assets/movimiento.png" alt="Movimiento" />
+            </div>
+
+            <div class="form-container">
+              <p>¿Quieres escribir cómo te sientes ahora?</p>
+              <input type="text" id="sentir" required />
+
+              <button type="button" class="submit-button" id="enviar">
+                Enviar
+              </button>
+            </div>
+          </div>
+
+          <div id="mensaje-container" style="display: none">
+            <div class="text-with-image-left">
+              <h3 class="mt-4">
+                Recuerda que está bien sentir tristeza, pero también sabes que
+                puedes salir de ella. Tómate tu tiempo y sigue adelante con
+                calma.
+              </h3>
+              <img
+                src="../images/assets/niña-despedida3.png"
+                alt="Niña despidiéndose triste"
+                width="250"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Comienzo del Footer -->
+    <footer>
+      <p>&copy; 2025 CalmaTea</p>
+    </footer>
+  </body>
+</html>

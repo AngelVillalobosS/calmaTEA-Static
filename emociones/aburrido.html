@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/../images/assets/calmatea_logo.png" type="image/x-icon">
+    <title>Pagina de inicio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400&family=Lato:wght@300&display=swap" />
+    <link rel="stylesheet" href="../css/components/navbar.css" />
+    <link rel="stylesheet" href="../css/components/footer.css" />
+    <link rel="stylesheet" href="../css/emociones.css" />
+    <!-- Llamado de los archivos Js -->
+     <script src="../js/navbar.js"></script>
+     <script src="../js/emociones.js"></script>
+  </head>
+  <body>
+    <!-- Comienzo del Header -->
+    <header>
+        <nav class="navbar-custom">
+          <div style="display: flex; align-items: center; gap: 10px">
+            <img
+              src="../images/assets/calmatea_logo.png"
+              width="150"
+              height="150"
+              alt="Logo"
+            />
+            <div style="display: flex; flex-direction: column">
+              <span><a href="../homepage.html" class="sendhome">CalmaTea</a></span>
+              <span>"Equilibra tus emociones, encuentra tu calma"</span>
+            </div>
+          </div>
+  
+          <div class="menu-container">
+            <button class="menu-button">&#9776;</button>
+            <div class="menu-dropdown">
+              <ul>
+                <li><a href="../homepage.html">Inicio</a></li>
+                <li><a href="../calmaestres.html">Calma tu estrés</a></li>
+                <li><a href="../registroEmocion.html">Registra una emoción</a></li>
+                <li><a href="../ejercicios.html">Ejercicios</a></li>
+                <li><a href="../diario.html">Diario</a></li>
+                <li><a href="../calendario.html">Calendario emocional</a></li>
+                <li><a href="../login.html">Cerrar sesión</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+    <!-- Comienzo del Main -->
+    <main>
+      <div class="container-custom">
+    <div class="content-box">
+    <div class="back-btn-container">
+        <a href="../registroEmocion.html" class="back-button">
+            <img src="../images/assets/flecha.png" alt="Regresar" class="back-arrow">
+        </a>
+    </div>
+        
+        <div class="text-with-image-left">
+            <img src="../images/assets/sleepping_girl.png" alt="Niña con mensaje" width="250">
+            <h2>¿Te sientes aburrido?<br>¡Está bien! A veces, el aburrimiento es la oportunidad perfecta para descubrir algo nuevo.</h2>
+        </div>
+
+        <h3>Puedes realizar lo siguiente:</h3>
+
+        <div class="exercise-list">
+            <p>1. Dibuja, escribe o arma un rompecabezas. ¡Deja volar tu imaginación!</p>
+            <img src="../images/assets/dibujo.png" alt="Dibujar">
+            <img src="../images/assets/escribir.png" alt="Escribir">
+            <img src="../images/assets/rompecabezas.png" alt="Rompecabezas">
+
+            <p>2. Lee un dato curioso, aprende una palabra en otro idioma o mira un video interesante.</p>
+            <img src="../images/assets/leer.png" alt="Leer">
+            <img src="../images/assets/aprender.png" alt="Aprender">
+            <img src="../images/assets/video.png" alt="Ver video">
+
+            <p>3. Pon tu canción favorita o descubre nuevos sonidos relajantes.</p>
+            <img src="../images/assets/musica.png" alt="Escuchar música">
+            
+            <div class="form-container">
+                <p>¿Quieres escribir cómo te sientes ahora?</p>
+                <input type="text" id="sentir"  required>
+        
+                <button type="button" class="submit-button" id="enviar">Enviar</button>
+            </div>
+        </div>      
+
+            <div id="mensaje-container" style="display: none;">
+                <div class="text-with-image-left">
+                    <h3 class="mt-4">El aburrimiento no dura para siempre. A veces, solo necesitas un pequeño empujón para descubrir algo interesante. ¡Anímate a probar algo nuevo!</h3>
+                    <img src="../images/assets/flowerhat_girl.png" alt="Niña despidiéndose" width="250">
+                </div>
+            </div>
+    </div>
+</div>
+    </main>
+    <!-- Comienzo del Footer -->
+    <footer>
+      <p>&copy; 2025 CalmaTea</p>
+    </footer>
+  </body>
+</html>

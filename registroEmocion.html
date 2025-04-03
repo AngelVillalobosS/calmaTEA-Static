@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/assets/calmatea_logo.png" type="image/x-icon">
+    <title>Pagina de inicio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400&family=Lato:wght@300&display=swap" />
+    <link rel="stylesheet" href="css/components/navbar.css" />
+    <link rel="stylesheet" href="css/components/footer.css" />
+    <link rel="stylesheet" href="css/registroEmocion.css" />
+    <!-- Llamado de los archivos Js -->
+     <script src="js/registrarEmocion.js"></script>
+  </head>
+  <body>
+    <!-- Comienzo del Header -->
+    <header>
+      <nav class="navbar-custom">
+        <div style="display: flex; align-items: center; gap: 10px">
+          <img
+            src="images/assets/calmatea_logo.png"
+            width="150"
+            height="150"
+            alt="Logo"
+          />
+          <div style="display: flex; flex-direction: column">
+            <span><a href="homepage.html" class="sendhome">CalmaTea</a></span>
+            <span>"Equilibra tus emociones, encuentra tu calma"</span>
+          </div>
+        </div>
+
+        <div class="menu-container">
+          <button class="menu-button">&#9776;</button>
+          <div class="menu-dropdown">
+            <ul>
+              <li><a href="homepage.html">Inicio</a></li>
+              <li><a href="calmaestres.html">Calma tu estrés</a></li>
+              <li><a href="selecEmociones.html">Registra una emoción</a></li>
+              <li><a href="ejercicios.html">Ejercicios</a></li>
+              <li><a href="diario.html">Diario</a></li>
+              <li><a href="calendario.html">Calendario emocional</a></li>
+              <li><a href="login.html">Cerrar sesión</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Comienzo del Main -->
+    <main>
+      <div class="container-custom">
+    <div class="title">
+      <h2>¿Cómo te encuentras hoy?<br>¡Cuéntanos!</h2>
+    </div>
+    
+        <div class="main-content">
+          <!-- Sección de emojis -->
+          <div class="emoji-grid">
+            <button class="emoji-button" data-emocion="nervioso">
+              <img src="images/assets/nervioso.png" alt="Botón de Nervioso">
+              <p>Nervioso</p>
+            </button>
+            <button class="emoji-button" data-emocion="aburrido">
+              <img src="images/assets/aburrido.png" alt="Botón de Aburrido">
+              <p>Aburrido</p>
+            </button>
+            <button class="emoji-button" data-emocion="travieso">
+              <img src="images/assets/travieso.png" alt="Botón de Travieso">
+              <p>Travieso</p>
+            </button>
+            <button class="emoji-button" data-emocion="contento">
+              <img src="images/assets/contento.png" alt="Botón de Contento">
+              <p>Contento</p>
+            </button>
+            <button class="emoji-button" data-emocion="miedoso">
+              <img src="images/assets/miedoso.png" alt="Botón de Miedoso">
+              <p>Miedoso</p>
+            </button>
+            <button class="emoji-button" data-emocion="triste">
+              <img src="images/assets/triste.png" alt="Botón de Triste">
+              <p>Triste</p>
+            </button>
+            <button class="emoji-button" data-emocion="shokeado">
+              <img src="images/assets/shokeado.png" alt="Botón de Shokeado">
+              <p>Shokeado</p>
+            </button>
+            <button class="emoji-button" data-emocion="amado">
+              <img src="images/assets/amado.png" alt="Botón de Amado">
+              <p>Amado</p>
+            </button>
+            <button class="emoji-button" data-emocion="enojado">
+              <img src="images/assets/enojado.png" alt="Botón de Enojado">
+              <p>Enojado</p>
+            </button>
+          </div>
+      
+      <!-- Formulario para ingresar la causa de la emoción -->
+      <div class="form-container">
+        <label for="causa_emocion">¿Qué causó esta emoción?</label>
+        <input type="text" id="causa_emocion" required>
+        
+        <label>Presiona el botón para recibir un consejo</label>            
+        <button type="button" class="submit-button" id="enviar">Enviar</button>
+      </div>
+    </div>
+  </div>
+    </main>
+    <!-- Comienzo del Footer -->
+    <footer>
+      <p>&copy; 2025 CalmaTea</p>
+    </footer>
+  </body>
+</html>
