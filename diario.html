@@ -1,153 +1,66 @@
-@include('components.navbar')
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/assets/calmatea_logo.png" type="image/x-icon">
     <title>¿Cómo te sientes?</title>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400&family=Lato:wght@300&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Lato', sans-serif;
-            font-weight: 300;
-            margin: 0;
-            padding: 0;
-            background-color: #ffffff;
-        }
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400&family=Lato:wght@300&display=swap" />
+    <link rel="stylesheet" href="css/components/navbar.css" />
+    <link rel="stylesheet" href="css/components/footer.css" />
+    <link rel="stylesheet" href="css/diario.css" />
+    <!-- Llamado de los archivos Js -->
+     <script src="js/diario.js"></script>
+     <script src="js/navbar.js"></script>
+  </head>
+  <body>
+    <!-- Comienzo del Header -->
+    <header>
+      <nav class="navbar-custom">
+        <div style="display: flex; align-items: center; gap: 10px">
+          <img
+            src="images/assets/calmatea_logo.png"
+            width="150"
+            height="150"
+            alt="Logo"
+          />
+          <div style="display: flex; flex-direction: column">
+            <span><a href="homepage.html" class="sendhome">CalmaTea</a></span>
+            <span>"Equilibra tus emociones, encuentra tu calma"</span>
+          </div>
+        </div>
 
-        .header img {
-            width: 273px;
-            height: 273px;
-            margin-right: 15px;
-        }
-
-        .header h1 {
-            font-size: 36px;
-            color: #014235;
-            margin: 0;
-            font-family: 'Fraunces', serif;
-        }
-
-        h2 {
-            font-family: 'Fraunces', serif;
-            font-size: 55px;
-            color: #014235;
-            display: flex;
-            align-items: center;
-            justify-content: justify;
-            max-width: 800px;
-            margin: 20px auto;
-        }
-
-        h2 img {
-            margin-right: 15px;
-        }
-
-        .form-container {
-            max-width: 600px;
-            margin: auto;
-            text-align: left;
-        }
-
-        label {
-            font-size: 20px;
-            color: #014235;
-            display: block;
-            margin-top: 15px;
-        }
-
-        select,
-        button {
-            width: 100%;
-            padding: 10px;
-            font-size: 16px;
-            margin-top: 5px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        .submit-button {
-            font-size: 17px;
-            color: #014235;
-            border: 2px solid #014235;
-            background-color: transparent;
-            padding: 12px 24px;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 20px;
-            transition: background-color 0.3s, color 0.3s;
-        }
-
-        .submit-button:hover {
-            background-color: #014235;
-            color: white;
-        }
-
-        .hidden {
-            display: none;
-        }
-
-        .back-btn-container {
-            margin-left: 20%;
-            margin-top: 3%;
-        }
-
-        /* Estilos para el footer */
-        .footer-text {
-            max-width: 600px;
-            margin: 20px auto;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            text-align: left;
-            font-family: 'Fraunces', serif;
-            font-size: 35px;
-            color: #014235;
-        }
-
-        .footer-text img {
-            width: 280px;
-            height: 280px;
-        }
-
-        .back-btn-container {
-            position: absolute;
-            /* Hace que la flecha esté fuera del flujo normal */
-            top: 200px;
-            /* Ajusta la distancia desde la parte superior de la página */
-            left: -3em;
-            /* Ajusta la distancia desde el borde izquierdo */
-            z-index: 10;
-            /* Asegura que la flecha esté por encima de otros elementos si es necesario */
-        }
-
-
-
-        .back-arrow {
-            width: 120px;
-            /* Ajusta el tamaño de la flecha */
-            height: auto;
-            /* Mantén la proporción de la imagen */
-        }
-    </style>
-</head>
-
-<body>
-    <div class="back-btn-container">
+        <div class="menu-container">
+          <button class="menu-button">&#9776;</button>
+          <div class="menu-dropdown">
+            <ul>
+              <li><a href="homepage.html">Inicio</a></li>
+              <li><a href="calmaestres.html">Calma tu estrés</a></li>
+              <li><a href="registroEmocion.html">Registra una emoción</a></li>
+              <li><a href="ejercicios.html">Ejercicios</a></li>
+              <li><a href="diario.html">Diario</a></li>
+              <li><a href="calendario.html">Calendario emocional</a></li>
+              <li><a href="login.html">Cerrar sesión</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Comienzo del Main -->
+    <main>
+      <div class="back-btn-container">
         <a href="{{ route('selecEmociones') }}" class="back-button">
-            <img src="{{ asset('images/assets/flecha.png')}}" alt="Regresar" class="back-arrow">
+            <img src="images/assets/flecha.png" alt="Regresar" class="back-arrow">
         </a>
     </div>
     <h2>
-        <img src="{{ asset('images/assets/sobre.png')}}" alt="" width="273" height="273">
+        <img src="images/assets/sobre.png" alt="" width="273" height="273">
         Tu importas.
         Vamos a hablar sobre cómo te sientes
     </h2>
 
     <div class="form-container">
         <form action="{{ route('registrarEmocion') }}" method="POST">
-            @csrf
 
             <label for="emocion">¿Cuál es tu emoción en este momento?</label>
             <select name="emocion" required>
@@ -250,58 +163,12 @@
 
     <div id="mensaje-container" class="footer-text" style="display: none;">
         <span>No hay respuestas correctas o incorrectas. Solo quiero saber cómo te sientes.</span>
-        <img src="{{ asset('images/assets/flor.png')}}" alt="" width="280" height="280">
+        <img src="images/assets/flor.png" alt="" width="280" height="280">
     </div>
-
-    <script>
-        function mostrarPreguntasAdicionales() {
-            var paso = document.getElementById("paso").value;
-            var preguntas = document.getElementById("preguntas-adicionales");
-            if (paso === "Sí") {
-                preguntas.classList.remove("hidden");
-            } else {
-                preguntas.classList.add("hidden");
-            }
-        }
-
-        document.getElementById('paso').addEventListener('change', mostrarPreguntasAdicionales);
-
-        document.getElementById('enviar').addEventListener('click', function(event) {
-    event.preventDefault(); // Evita la recarga de la página
-
-    let form = document.querySelector('form');
-    let formData = new FormData(form);
-
-    fetch("{{ route('registrarEmocion') }}", {
-        method: "POST",
-        body: formData,
-        headers: {
-            "X-CSRF-TOKEN": "{{ csrf_token() }}"
-        }
-    })
-    .then(response => response.json())
-    .then(data => {
-        if (data.success) {
-            // Ocultar botón de enviar
-            document.getElementById('enviar').style.display = 'none';
-
-            // Mostrar mensaje con imagen de la niña
-            let mensajeContainer = document.getElementById('mensaje-container');
-            mensajeContainer.style.display = 'flex';
-
-            // Deshabilitar todos los campos del formulario para evitar cambios
-            document.querySelectorAll('form select, form button').forEach(input => input.disabled = true);
-        } else {
-            // Mostrar alerta si ya se registró la emoción en el día
-            alert(data.message);
-        }
-    })
-    .catch(error => console.error("Error:", error));
-});
-
-    </script>
-
-    @include('components.pagefoot')
-</body>
-
+    </main>
+    <!-- Comienzo del Footer -->
+    <footer>
+      <p>&copy; 2025 CalmaTea</p>
+    </footer>
+  </body>
 </html>
