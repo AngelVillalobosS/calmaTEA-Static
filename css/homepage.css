@@ -1,0 +1,173 @@
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animated {
+  animation: fadeInUp 1s ease-out;
+}
+
+.header {
+  background-color: #f5e5d0;
+  padding: 20px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  text-align: center;
+  padding: 40px;
+}
+
+.container h2,
+.container p,
+.content h3,
+.content p,
+.button-section p,
+.quote-section p {
+  animation: fadeInUp 1s ease-out;
+}
+
+.container h2 {
+  font-family: "Fraunces", serif;
+  font-size: 55px;
+  color: #014235;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.container p {
+  font-size: 38px;
+  color: #000;
+  text-align: justify;
+  max-width: 80%;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 90%;
+  margin-top: 60px;
+  gap: 60px;
+}
+
+.content-text {
+  flex: 1;
+  text-align: left;
+  max-width: 500px;
+  margin-left: 50px;
+}
+
+.content h3 {
+  font-size: 55px;
+  color: #014235;
+  font-family: "Fraunces", serif;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 41px;
+  color: #000;
+  text-align: left;
+  max-width: 500px;
+}
+
+.illustration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.illustration img {
+  width: 350px;
+  height: auto;
+}
+
+.button-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.button-section p {
+  font-size: 40px;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.arrow {
+  font-size: 30px;
+  color: #014235;
+  margin-bottom: 10px;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.button-container a {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: #014235;
+  text-decoration: none;
+  border: 2px solid #014235;
+  border-radius: 5px;
+  animation: fadeInUp 1s ease-out;
+}
+
+.quote-section {
+  width: 1258px;
+  height: 399px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.quote-section img {
+  width: 150px;
+  height: auto;
+}
+
+.quote-section p {
+  font-size: 55px;
+  font-family: "Fraunces", serif;
+  color: #014235;
+  margin-top: 10px;
+}

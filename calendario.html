@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/assets/calmatea_logo.png" type="image/x-icon">
+    <title>Pagina de inicio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400&family=Lato:wght@300&display=swap" />
+    <link rel="stylesheet" href="css/components/navbar.css" />
+    <link rel="stylesheet" href="css/components/footer.css" />
+    <link rel="stylesheet" href="css/calendario.css" />
+    <!-- Llamado de los archivos Js -->
+     <script src="js/navbar.js"></script>
+     <script src="js/calendario.js"></script>
+  </head>
+  <body>
+    <!-- Comienzo del Header -->
+    <header>
+      <nav class="navbar-custom">
+        <div style="display: flex; align-items: center; gap: 10px">
+          <img
+            src="images/assets/calmatea_logo.png"
+            width="150"
+            height="150"
+            alt="Logo"
+          />
+          <div style="display: flex; flex-direction: column">
+            <span><a href="homepage.html" class="sendhome">CalmaTea</a></span>
+            <span>"Equilibra tus emociones, encuentra tu calma"</span>
+          </div>
+        </div>
+
+        <div class="menu-container">
+          <button class="menu-button">&#9776;</button>
+          <div class="menu-dropdown">
+            <ul>
+              <li><a href="homepage.html">Inicio</a></li>
+              <li><a href="calmaestres.html">Calma tu estrés</a></li>
+              <li><a href="selecEmociones.html">Registra una emoción</a></li>
+              <li><a href="ejercicios.html">Ejercicios</a></li>
+              <li><a href="diario.html">Diario</a></li>
+              <li><a href="calendario.html">Calendario emocional</a></li>
+              <li><a href="login.html">Cerrar sesión</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Comienzo del Main -->
+    <main>
+      <p class="motivational-text">¡Puedes seguir progresando, no te rindas!</p>
+    <div class="container">
+        <img src="images/assets/happy_support.avif" alt="Dibujo motivacional" class="image">
+        <div class="calendar-container">
+            <div class="calendar-header">
+                <span class="arrow" onclick="prevMonth()">&#9665;</span>
+                <p id="month-year">Agosto - 2025</p>
+                <span class="arrow" onclick="nextMonth()">&#9655;</span>
+            </div>
+            <table>
+                <tr>
+                    <th>Dom</th><th>Lun</th><th>Mar</th><th>Mié</th><th>Jue</th><th>Vie</th><th>Sáb</th>
+                </tr>
+                <tbody id="calendar-body">
+                    <!-- El contenido del calendario se genera dinámicamente aquí -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </main>
+    <!-- Comienzo del Footer -->
+    <footer>
+      <p>&copy; 2025 CalmaTea</p>
+    </footer>
+  </body>
+</html>
